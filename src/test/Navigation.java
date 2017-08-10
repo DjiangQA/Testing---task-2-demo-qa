@@ -13,6 +13,8 @@ public class Navigation {
 	
 	final String draggableSortable = "//*[@id=\"ui-id-5\"]";
 	
+	final String menue = "//*[@id=\"menu-item-147\"]/a";
+	
 	
 	@FindBy (xpath = draggableX)
 	public WebElement Draggable;
@@ -25,5 +27,8 @@ public class Navigation {
 	
 	@FindBy (xpath = draggableSortable)
 	public WebElement DraggableSortable;
+	
+	@FindBy (xpath = menue)
+	public WebElement Menue;
 
 }

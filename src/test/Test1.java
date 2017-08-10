@@ -9,6 +9,7 @@ import java.util.function.Function;
 
 import org.junit.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,6 +19,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
+import org.openqa.selenium.firefox.*;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -26,12 +29,15 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 public class Test1 {
 
 	private WebDriver CMDR;
+	private WebDriver FDDR;
+	
 	private Navigation N;
 	private Draggable D;
 	private Constrain C;
 	private Cursor Cs;
 	private Events E;
 	private DraggableSortable Ds;
+	private Menue M;
 
 	Actions actions;
 
@@ -64,14 +70,15 @@ public class Test1 {
 		Cs = PageFactory.initElements(CMDR, Cursor.class);
 		E = PageFactory.initElements(CMDR, Events.class);
 		Ds = PageFactory.initElements(CMDR, DraggableSortable.class);
+		M = PageFactory.initElements(CMDR, Menue.class);
 	}
 
 	@Test
-	public void test() throws InterruptedException, IOException {
+	public void test_chrome() throws InterruptedException, IOException {
 
 		int origin_posi_dragableBoxX = 688;
 		int origin_posi_dragableBoxY = 413;
-
+		
 		int drag_posiX = 50;
 		int drag_posiY = 80;
 
@@ -335,6 +342,35 @@ public class Test1 {
 		
 		test.info("Finish test on DraggableSortable");
 		//Thread.sleep(2000);
+		
+		// --------------------------------------------------------- Menu
+		actions.click(N.Menue).perform();
+		actions.moveToElement(M.Menue).click().perform();
+		actions.moveToElement(M.Menue_option1).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue_option2).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue_option3).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue_option4).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue_option5).perform();
+		Thread.sleep(1000);
+		
+		
+		actions.moveToElement(M.Menue2).click().perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue2_option1).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue2_option2).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue2_option3).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue2_option4).perform();
+		Thread.sleep(1000);
+		actions.moveToElement(M.Menue2_option5).perform();
+		
+		Thread.sleep(1000);
 		
 	}
 
