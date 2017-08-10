@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-				<span class='label suite-start-time'>Aug 10, 2017 11:45:18 AM</span>
+				<span class='label suite-start-time'>Aug 10, 2017 2:52:05 PM</span>
 			</a>
 			<a href='#!'>
 				<span class='label'>v3.0.3</span>
@@ -62,7 +62,8 @@
 					<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li class='divider'></li>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
 			</div>
@@ -127,10 +128,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>0</span> step(s) passed</span>
+					<span><span class='strong'>9</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>18</span> others
 				</div>
 			</div>
 		</div>
@@ -148,15 +149,170 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Test1</span>
-						<span class='test-time'>Aug 10, 2017 11:45:18 AM</span>
+						<span class='test-time'>Aug 10, 2017 2:52:05 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug 10, 2017 11:45:18 AM</span>
-	<span class='label end-time'>Aug 10, 2017 11:45:18 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Aug 10, 2017 2:52:05 PM</span>
+	<span class='label end-time'>Aug 10, 2017 2:52:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+376ms</span>
 </div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:09 PM</td>
+					<td class='step-details'>Test website:http://demoqa.com/</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:13 PM</td>
+					<td class='step-details'>Start test on Draggable</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:13 PM</td>
+					<td class='step-details'>Clicked on Draggable</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:13 PM</td>
+					<td class='step-details'>Web element Draggable moved, test passed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>End test Snapshot : com.aventstack.extentreports.ExtentTest@1e6a3214</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Finish test on Draggable</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Start test on Constrain movement</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Web element BTL moved, test passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Web element BTR moved, test passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Web element BBL moved, test passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:14 PM</td>
+					<td class='step-details'>Web element BBR moved, test passed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>End test Snapshot : com.aventstack.extentreports.ExtentTest@1e6a3214</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Finish test on Constrain movement</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Start test on CursorStyle</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Web element BoxL moved, test passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Web element BoxM moved, test passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Web element BoxR moved, test passed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>End test Snapshot : com.aventstack.extentreports.ExtentTest@1e6a3214</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Finish test on Cursor Style</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:15 PM</td>
+					<td class='step-details'>Start test on Events</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>Web element Events moved, test passed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>End test Snapshot : com.aventstack.extentreports.ExtentTest@1e6a3214</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>Finish test on Events</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>Start test on DraggableSortable</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>End test Snapshot : com.aventstack.extentreports.ExtentTest@1e6a3214</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>Finish test on DraggableSortable</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>2:52:16 PM</td>
+					<td class='step-details'>Test Status:pass</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Users\Administrator\workspace\Testing - DemoQA.com\Draggable end of test.jpg' width='10%' src='' data-src='C:\Users\Administrator\workspace\Testing - DemoQA.com\Draggable end of test.jpg'></li>
+								<li><img data-featherlight='C:\Users\Administrator\workspace\Testing - DemoQA.com\Constrain movement end of test.jpg' width='10%' src='' data-src='C:\Users\Administrator\workspace\Testing - DemoQA.com\Constrain movement end of test.jpg'></li>
+								<li><img data-featherlight='C:\Users\Administrator\workspace\Testing - DemoQA.com\Cursor Style end of test.jpg' width='10%' src='' data-src='C:\Users\Administrator\workspace\Testing - DemoQA.com\Cursor Style end of test.jpg'></li>
+								<li><img data-featherlight='C:\Users\Administrator\workspace\Testing - DemoQA.com\Events end of test.jpg' width='10%' src='' data-src='C:\Users\Administrator\workspace\Testing - DemoQA.com\Events end of test.jpg'></li>
+								<li><img data-featherlight='C:\Users\Administrator\workspace\Testing - DemoQA.com\DraggableSortable end of test.jpg' width='10%' src='' data-src='C:\Users\Administrator\workspace\Testing - DemoQA.com\DraggableSortable end of test.jpg'></li>
+							</ul>
 					</div>
 				</li>
 			</ul>
@@ -197,25 +353,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>0</div>
+					<div class='panel-lead'>27</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 10, 2017 11:45:18 AM</div>
+					<div class='panel-lead'>Aug 10, 2017 2:52:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 10, 2017 11:45:40 AM</div>
+			 		<div class='panel-lead'>Aug 10, 2017 2:52:17 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>21,309ms</div>
+					<div class='panel-lead'>12,217ms</div>
 				</div>
 			</div>
 		</div>
@@ -235,13 +391,13 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 0,
+				passChild: 9,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 0,
+				infoChild: 18,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

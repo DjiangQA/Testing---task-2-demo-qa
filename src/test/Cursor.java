@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Cursor {
 	
-	private final String boxL = "//*[@id=\"drag\"]/p";
+	 final String boxL = "//*[@id=\"drag\"]/p";
 	private final String boxM = "//*[@id=\"drag2\"]/p";
 	private final String boxR = "//*[@id=\"drag3\"]/p";
 	

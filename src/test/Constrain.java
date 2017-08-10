@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Constrain {
 	
-	private final String boxTopLeft = "//*[@id=\"draggabl\"]/p";
+	final String boxTopLeft = "//*[@id=\"draggabl\"]/p";
 	private final String boxTopRight = "//*[@id=\"draggabl2\"]/p";
 	private final String boxbottomLeft = "//*[@id=\"draggabl3\"]/p";
 	private final String boxbottomRight = "//*[@id=\"draggabl5\"]";
